@@ -5,3 +5,4 @@ Algorithm practice
 2. 사칙연산 
 3. for문 사용해보기
 4. if문 사용해보기
+5. 함수 사용하기
