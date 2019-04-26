@@ -30,14 +30,12 @@ public class Solution {
 		Iterator<String> keys = map.keySet().iterator();
 		while (keys.hasNext()) {
 			String key = keys.next();
-//			System.out.println(String.format("키 : %s, 값 : %s", key, map.get(key)));
 
 			answer *= map.get(key)+1;
 		}
 		answer = answer -1;
 		System.out.println(answer);
 
-		// return answer
 
 	}
 
