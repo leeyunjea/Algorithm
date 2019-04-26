@@ -7,10 +7,11 @@ public class Solution {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String[][] clothes = {{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban", "headgear"}};
+		String[][] clothes = { { "yellow_hat", "headgear" }, { "blue_sunglasses", "eyewear" },
+				{ "green_turban", "headgear" } };
 //		String[][] clothes = { { "crow_mask", "face" }, { "blue_sunglasses", "face" }, { "smoky_makeup", "face" } };
 
-		int answer = 0;
+		int answer = 1;
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
@@ -24,35 +25,19 @@ public class Solution {
 			}
 
 		}
-		
-		int size2 = 1;
-		
-		boolean check = false;
+
 
 		Iterator<String> keys = map.keySet().iterator();
 		while (keys.hasNext()) {
 			String key = keys.next();
 //			System.out.println(String.format("키 : %s, 값 : %s", key, map.get(key)));
-			if(map.size() == 1) {
-				answer = map.get(key);
-				check = true;
-				break;
-				// return answer;
-			}else {
-				size2 *= map.get(key);
-				check = false;
-			}
-		}
-		if(check) {
-			System.out.println(answer);
-		}else {
-			answer = size + size2;
-			System.out.println(answer);
-		}
-		
-		//return answer
 
-		
+			answer *= map.get(key)+1;
+		}
+		answer = answer -1;
+		System.out.println(answer);
+
+		// return answer
 
 	}
 
