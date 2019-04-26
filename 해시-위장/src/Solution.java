@@ -11,7 +11,8 @@ public class Solution {
 //				{ "green_turban", "headgear" } };
 		String[][] clothes = { { "crow_mask", "face" }, { "blue_sunglasses", "face" }, { "smoky_makeup", "face" } };
 
-		int answer = 1;
+		int answer = 1; // change 0->1
+		
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 
